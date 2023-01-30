@@ -26,4 +26,26 @@ A range function is used to loop over some length:
 range (0, 5)
 Here, the range loops over 0 to 4.5  is excluded.
 
+ANSWERS................
 
+
+1)
+
+def count_substring(string, sub_string):
+    len_subString = len(sub_string)
+    output = 0
+    for count in range(len(string)):
+        if string[count:(count + len_subString)]==sub_string:
+            output += 1
+    return output
+    
+    return
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
+    
+    
