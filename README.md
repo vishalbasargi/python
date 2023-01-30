@@ -29,7 +29,7 @@ Here, the range loops over 0 to 4.5  is excluded.
 ANSWERS................
 
 
-1)
+1)..............
 
 def count_substring(string, sub_string):
     len_subString = len(sub_string)
@@ -48,4 +48,31 @@ if __name__ == '__main__':
     count = count_substring(string, sub_string)
     print(count)
     
+2)...........
+
+def count_substring(string, sub_string):
+    counting = 0
+    while sub_string in string:
+        a=string.find(sub_string)
+        string=string[a+1:]
+        counting += 1
+    return counting
+
+
+3) ................RECURSION
+    
+    c = 0
+def count_substring(string, sub_string):
+    global c  
+    if(string.find(sub_string) != -1):
+        c = c +1
+        count_substring(string[string.find(sub_string)+1:],sub_string)
+    return c
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
     
