@@ -1,2 +1,6 @@
 # python
-my learning
+#my learning
+hgheihgwiuwhghjea
+wgkwjohjeggq
+h qegjnwihihjihbkjsnvkjw 
+wgiwowhrohbrhgo gijhj
